@@ -109,7 +109,7 @@ blockquote {
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: lato;
     p {
       display: inline-block;
       margin: 0;
@@ -149,7 +149,7 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 2px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
 }
