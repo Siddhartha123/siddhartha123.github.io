@@ -1,12 +1,12 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Sidhartha Kumar Ippili
-    # - name: Date of Birth
-    #   value: 
-    - name: Languages
-      value: Odia, English, Hindi
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Sidhartha Kumar Ippili
+#     - name: Date of Birth
+#       value: 
+#     - name: Languages
+#       value: Odia, English, Hindi
 
 - title: Education
   type: time_table
@@ -16,51 +16,55 @@
       year: 2019 - 2022
       description:
         - Advised by <a href="https://www.ee.iitb.ac.in/web/people/sachin-patkar/">Prof. Sachin Patkar</a>.
-        - <span>GPA:<span> (Overall) 9.84/10, (Courses) 9.63/10
+        - <span>GPA - <span> 9.84/10 (Overall), 9.63/10 (Courses only)
         - <span>Courses taken:</span> Hardware Description, VLSI Design, Advanced Computer Architecture, Processor Design, Testing & Verification of VLSI Circuits, Algorithmic Design of Digital Systems, Computer Architecture for Performance and Security
     - title: B.Tech. in Electronics and Instrumentation Engineering
       institution: National Institute of Technology, Rourkela, India
       year: 2015 - 2019
       description:
-        - <b>Advisor:</b> <a href="https://www.nitrkl.ac.in/EC/~dpacharya">Prof. D. P. Acharya</a>.
+        - <b>Advisor:</b> <a href="https://www.nitrkl.ac.in/EC/~dpacharya">Prof. Debiprasad P Acharya</a>.
         - <span>GPA:<span> 8.86/10
 
-- title: Experience
+- title: Work/Research Experience
   type: time_table
   contents:
+    - title: Digital Design Engineer, Radar R&D, Texas Instruments Pvt. Ltd.
+      year: 2022 - Present
+      description:
+        - Working on pre-Silicon validation of Radar SoCs using in-circuit emulation on Cadence Palladium hardware
+        - Owned emulation setup for one product which involves building emulation image from design RTL and made significant enhancements in the build flow, feature-set e.g. <b>integration of UPF power intent onto Cadence emulation platform</b>, resulting in enhanced validation quality and reduction of turnaround time when migrating to newer design RTL release
+        - Developed <b>Python based framework to generate synthesizable RTL</b> of testbench for emulation platform to expose the design to various complex use-cases in pre-Si stage
+        - Worked on validation of <b>ethernet IP</b> by implementing various complex software datapaths while meeting system performance in memory-constrained devices. This included generation of UDP and PTP packets and transmitting them over 1 Gbps interface which was implemented in bare-metal C code
+        - Developed system level test scenarios and implemented them in Embedded C to uncover RTL bugs/corner-case misses
+        - Mentored several interns working on range of activities including development of product agnostic automation flows for better reuse, power aware emulation, cache architecture exploration using processor benchmarks
+
     - title: M.Tech Thesis, IIT Bombay
       year: 2020 - 2021
-      description:
+      institution:
         - <b>Advisor:</b> <a href="https://www.ee.iitb.ac.in/web/people/sachin-patkar/">Prof. Sachin Patkar</a>.
+      description:
         - Objective - To design specialized hardware systems for acceleration of post-quantum cryptographic algorithms using hardware/software co-design
         - Reviewed literature on various post-quantum cryptographic algorithms like lattice based Ring-LWE
         - Developing hardware accelerators for polynomial multiplication which are highly parallelizable and can be configured to handle variable dimensions for post-quantum cryptographic applications
         - Developing scalable post-quantum cryptoprocessors, Integration of the developed accelerators with RISC-V cores in the form of off-load engine
         - Development of accelerators for large scale primitives of Zero Knowledge Proofs like NTT and MSM
 
-    - title: Internship, Cyber Physical Systems Lab, IIIT Delhi
+    - title: Cyber Physical Systems Lab, IIIT Delhi (Summer Intern)
       year: 2018 (Summer)
+      institution:
+        - <em>Advisor:</em> <a href="https://moonlab.iiserb.ac.in/people.html">Prof. P. B. Sujit</a>
       description:
-        - <b>Advisor:</b> <a href="https://moonlab.iiserb.ac.in/people.html">Prof. P. B. Sujit</a>
         - Implementation of Model Predictive Control based cooperative target defence using ground-rover
         - Interfaced a MATLAB based 3-agent control algorithm with remotely controlled ground rovers using ROS
         - Optimized the reaction delay by modifying the rovers' on-board controller firmware and developed browser-based visualization tool for realtime GPS data collection
 
     - title: Internship, Drubus Technologies Pvt. Limited
       year: 2018 (Summer)
+      institution:
+        - <em>Advisor:</em> <a href="https://in.linkedin.com/in/sanjay-kumar-mitra-612781b4">Sanjay Kumar Mitra</a>
       description:
-        - <b>Advisor:</b> <a href="https://in.linkedin.com/in/sanjay-kumar-mitra-612781b4">Sanjay Kumar Mitra</a>
         - Multi-tenancy Infrastructure development for Cloud Applications - facilitated deployment of web applications in a distributed system for multiple clients while ensuring high availability.
         - Multi-threaded Pooling Mechanism - Implemented various scheduling algorithms to share resources among multiple web clients to ensure fair service access.
-
-    # - title: Professor of Theoretical Physics
-    #   institution: Karl-Ferdinand University, Prague, Czechoslovakia
-    #   year: 1911 - 1917
-    #   description:
-
-    # - title: Associate Professor of Theoretical Physics
-    #   institution: University of Zurich, Zurich, Switzerland
-    #   year: 1909 - 1911
 
 - title: Publications
   type: time_table
@@ -68,24 +72,100 @@
     - title: <a href="https://arxiv.org/abs/2304.05634">NMPC Based Approach for Cooperative Target Defence</a>
       year: 2019
       description:
-        - <b>Authors:</b> Amith Manoharan, Mandeep Singh, Andrea Alessandretti, Joel G Manathara, SC Prusty, Nishant Mohanty, Sidhartha Kumar, Ashutosh Sahoo, PB Sujit
-        - <b>Conference:</b> <i><a href="https://acc2019.a2c2.org/">American Control Conference 2019 </a></i>, Philadelphia, USA.
+        - <b>Authors:</b> Amith Manoharan, Mandeep Singh, Andrea Alessandretti, Joel G Manathara, SC Prusty, Nishant Mohanty, <b>Sidhartha Kumar</b>, Ashutosh Sahoo, PB Sujit
+        - <b>Conference:</b> <i><a href="https://acc2019.a2c2.org/">American Control Conference 2019</a></i>, Philadelphia, USA.
+    - title: <a href="https://60dac.conference-program.com/presentation/?id=ETPOST217&sess=sess244">Unified Design Verification Flow for Pre-Silicon SoC Power Estimation And Achieving Post-Silicon Correlation to Customer Sampling</a>
+      year: 2023
+      description:
+        - <b>Authors:</b> Prashanth Saraf, Ankita Mohanty, Sai Ram Jayanthi, Tanushri Bhagat, Aruna Koityar, Ninad Khire, <b>Sidhartha Kumar</b>, Karthik Subburaj, Ashwini Padoor, Subhadeep Ghosh
+        - <b>Conference:</b> <i><a href="https://60dac.conference-program.com/">Design Automation Conference 2023</a></i>, San Francisco, USA.
 
-# - title: Open Source & Course Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="/projects/cv">Video Object Segmentation</a>
-#       year: Spring 2022
-#       description:
-#     - title: <a href="/projects/nlp">Hypernym Discovery</a>
-#       year: Spring 2022
-#       description:
-#     - title: <a href="/projects/dip">Vehicle Detection and Counter</a>
-#       year: Autumn 2021
-#       description:
-#     - title: <a href="/projects/smai">Detecting Duplicate Quora Question Pairs</a>
-#       year: Autumn 2021
-#       description:
+- title: Open Source & Course Projects
+  type: time_table
+  contents:
+    # - title: <a href="/projects/cv">Video Object Segmentation</a>
+    #   year: Spring 2022
+    #   description:
+
+    - title: HW/SW co-design based acceleration of post-quantum cryptographic algorithms
+      year: Jun ’21 - July ’22
+      institution: M.Tech. Project, <em>Guide:</em> Prof. Sachin Patkar, Dept. of EE, 
+      description: 
+        - Developed hardware accelerators for polynomial multiplication which are highly parallel and can be configured to handle variable dimensions for post-quantum cryptographic applications
+        - Development of accelerators for large scale primitives of Zero Knowledge Proofs like high order Number Theoretic Transform and Multi-Scalar Multiplication
+        - Integration of the developed accelerators with Xilinx Micro-blaze core in the form of off-load engine
+    - title: Cache conflict based attack on randomized cache Jun 
+      year: ’21 - July ’22
+      institution: 
+          - <em>Instructor:</em> Prof. Biswabandan Panda, Dept. of CSE, IIT Bombay  (Comp. Arch. for Performance & Security)
+      description:     
+          - Attempted to exploit the knowledge of replacement policy used to mount side-channel attack on last level randomized cache
+          - Analysed the extent to which prime+probe attack can affect randomized cache using a trace based architecture simulator (ChampSim)
+
+    - title: 32&times;32 Matrix-vector Product Accelerator 
+      year: Jul - Dec '20
+      institution:
+          - <em>Instructor:</em> Prof. Madhav Desai, Dept. of EE, IT Bombay(Algorithmic Design of Digital Systems)
+      description:  
+          - Designed a hardware accelerator for matrix-vector product calculation in Aa language
+          - Performance was improved using pipeline parallel architecture and memory banking
+
+    - title: FPGA based image compression and encryption system
+      year: Jan - May '20
+      institution:
+          - <em>Instructor:</em> Prof. Sachin Patkar, Dept. of EE, IIT Bombay (VLSI Design Lab)
+      description:  
+          - DWT based compression implemented in BSV and AES-128 encryption implemented in Verilog was implemented as a co-processor unit
+          - Tested the design using NIOS II soft-core and Nios II Software Build Tools on Intel DE0-Nano
+
+    - title: 4-input/4-output Packet switch
+      year: Jul - Dec '20
+      institution:
+          - <em>Instructor:</em> Prof. Madhav Desai, Dept. of EE, IIT Bombay (Algorithmic Design of Digital Systems)
+      description:  
+          - Designed a packet switch for routing data packets in Aa language which generated VHDL model
+          - C/RTL co-simulation was done using GHDL and AHIR toolchain that covered various port scenarios
+
+    - title: 32-bit Dadda Multiplier RTL design
+      year:  Jul - Dec '19
+      institution:
+          - <em>Instructor:</em> Prof. Dinesh Sharma, Dept. of EE, IIT Bombay (VLSI Design)
+      description:  
+          - Designed a parameterized PHP script to generate VHDL code for all reduction stages of Dadda multiplier which supports variable data-width multiplication and used Brent-Kung adder for final addition
+
+    - title: 16-bit Brent Kung adder ASIC design 
+      year: Jul - Dec '19
+      institution:
+          - <em>Instructor:</em> Prof. Dinesh Sharma, Dept. of EE, IIT Bombay  (VLSI Design)
+      description:  
+          - Designed 32-bit logarithmic (Brent Kung) adder in VHDL and determined the critical path delay
+          - Designed layout of 16-bit Brent Kung Adder using Cadence Virtuoso and extracted the delays
+
+    - title: 16-bit 8-point FFT processor RTL Design
+      year:  Feb - Mar '19
+      institution:
+          - <em>Guide:</em> Prof. Debiprasad P Acharya, Dept. of ECE, NIT Rourkela (Reconfigurable Systems Design Lab)
+      description:  
+          - Implemented pipelined FFT processor in Verilog that calculates the DFT sequence of 16-bit fixed point input sequence using decimation-in-time algorithm
+
+    - title: CNF builder framework for use in verification 
+      year: Jan - May '21
+      institution:
+          - <em>Instructor:</em> Prof. Madhav Desai, Dept. of EE, IIT Bombay  (Testing and Verification of VLSI Circuits)
+      description:  
+          - Designed light-weight C++ library for manipulation of logical expressions in conjunctive normal form (CNF)
+          - Used the framework for generating fault test patterns and verifying FSM equivalence
+        
+
+- title: Key Courses
+  type: nested_list
+  contents:
+      - items: 
+        - Hardware Description,  VLSI Design,  VLSI Design Lab 
+        - Processor Design, Advanced Computer Architecture, Algorithmic Design of Digital Systems
+    # - title: Embedded 
+    #   items: 
+    #   - Embedded Systems Design,  Testing & Verification of VLSI Circuits,  
 
 # - title: Honors and Awards
 #   type: time_table

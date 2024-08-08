@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: To be populated soon
 years: [2023, 2022]
-nav: true
+nav: false
 nav_order: 1
 ---
 <!-- _pages/publications.md -->

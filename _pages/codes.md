@@ -2,9 +2,9 @@
 layout: page
 permalink: /codes/
 title: Codes
-description: Codes released for IIITH course assignments and projects  •  Open source projects.
+description: Codes released for course assignments, projects and   •  Open source projects.
 # description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
-nav: true
+nav: false
 nav_order: 3
 ---
 
